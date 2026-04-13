@@ -1,0 +1,32 @@
+{
+  "name": "agriculture-farmers-app",
+  "version": "1.0.0",
+  "description": "Web application for farmers to choose suitable crops and irrigation processes using live web-scraped agricultural data",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend && npm run dev",
+    "start": "node backend/server.js",
+    "build": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "axios": "^1.13.5",
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "i18next": "^23.4.6",
+    "i18next-http-middleware": "^3.3.2",
+    "mongoose": "^7.5.0",
+    "pdfkit": "^0.13.0",
+    "puppeteer": "^21.3.6",
+    "react-i18next": "^16.5.4",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}
